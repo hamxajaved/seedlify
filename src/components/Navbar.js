@@ -65,26 +65,20 @@ function Navbar() {
             </li>
             <li className="nav-item">
               <a
-                className="nav-link disabled"
+                className="nav-link "
                 href="#"
                 tabIndex="-1"
                 aria-disabled="true"
               >
-                Disabled
+                About
               </a>
             </li>
           </ul>
-          <form className="d-flex">
-            <input
-              className="form-control me-2"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-            ></input>
-            <button className="btn btn-outline-success" type="submit">
-              Search
-            </button>
-          </form>
+        </div>
+        <div className="float-right">
+          <a className="nav-link" href="#" tabIndex="-1" aria-disabled="true">
+            Login
+          </a>
         </div>
       </div>
     </nav>

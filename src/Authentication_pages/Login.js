@@ -1,12 +1,11 @@
 // @flow
 import * as React from "react";
+import auth from "../img/auth.jpg";
 export function Login() {
   return (
-    <div className="container-fluid row ">
-      <div className="col-sm-4 col-md-4 col-lg-4 bg-dark">
-        <p>Image</p>
-      </div>
-      <div className="col-sm-8 col-md-8 col-lg-8 bg-light">
+    <div className="row h-100">
+      <div className="col-sm-5 col-md-5 col-lg-5 bg-dark auth-image "></div>
+      <div className="col-sm-7 col-md-7 col-lg-7 my-auto">
         <div className="auth-div">
           <form>
             <h3 className="text-center">Login</h3>
@@ -28,8 +27,10 @@ export function Login() {
                 className="form-control"
               ></input>
             </div>
-
-            <button className="btn btn-primary">Login</button>
+            <br></br>
+            <div>
+              <button className="btn btn-primary btn-block">Login</button>
+            </div>
           </form>
         </div>
       </div>

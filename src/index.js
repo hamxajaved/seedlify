@@ -5,10 +5,11 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import "bootstrap/dist/css/bootstrap.css";
 import { Login } from "./Authentication_pages/Login";
+import Register from "./Authentication_pages/Register";
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Register></Register>
   </React.StrictMode>,
   document.getElementById("root")
 );
