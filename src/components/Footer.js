@@ -3,7 +3,7 @@ import * as React from "react";
 import { BsEnvelope, BsPhone } from "react-icons/bs";
 function Footer() {
   return (
-    <footer className="bg-dark text-white pt-5 pt-4  fixed-bottom">
+    <footer className="bg-dark text-white pt-5 pt-4">
       <div className="container text-centered text-md-left">
         <div className="row text-centered text-md-left">
           <div className="col-md-4 col-lg-4 col-xl-4 mx-auto mt-4">

@@ -9,7 +9,7 @@ import Register from "./Authentication_pages/Register";
 
 ReactDOM.render(
   <React.StrictMode>
-    <Register></Register>
+    <App></App>
   </React.StrictMode>,
   document.getElementById("root")
 );

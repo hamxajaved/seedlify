@@ -8,15 +8,11 @@ import Navbar from "./components/Navbar";
 function App() {
   return (
     <div className="App">
-      <div>
+      <div className="container">
         <Navbar></Navbar>
       </div>
-      <div>
-        <Home></Home>
-      </div>
-      <div className="footer">
-        <Footer></Footer>
-      </div>
+      <Home></Home>
+      <Footer></Footer>
     </div>
   );
 }
