@@ -38,15 +38,6 @@ function Register() {
                 className="form-control"
               ></input>
             </div>
-            <div className="form-group">
-              <label>Confirm Email</label>
-              <input
-                type="email"
-                name="confirm_email"
-                placeholder="Confirm email"
-                className="form-control"
-              ></input>
-            </div>
 
             <div className="form-group">
               <label>Phone</label>

@@ -5,14 +5,21 @@ import Footer from "./components/Footer";
 import Home from "./components/Home";
 import Navbar from "./components/Navbar";
 
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+
 function App() {
   return (
     <div className="App">
-      <div className="container">
-        <Navbar></Navbar>
-      </div>
-      <Home></Home>
-      <Footer></Footer>
+      <BrowserRouter>
+        <Switch>
+          <Route exact path="/" component={() => <Home />}></Route>
+          <Route path="/login" component={() => <Login></Login>}></Route>
+          <Route
+            path="/register"
+            component={() => <Register></Register>}
+          ></Route>
+        </Switch>
+      </BrowserRouter>
     </div>
   );
 }
