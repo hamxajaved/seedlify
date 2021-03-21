@@ -6,10 +6,11 @@ import reportWebVitals from "./reportWebVitals";
 import "bootstrap/dist/css/bootstrap.css";
 import { Login } from "./Authentication_pages/Login";
 import Register from "./Authentication_pages/Register";
+import Create from "./Product/Create";
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Create />
   </React.StrictMode>,
   document.getElementById("root")
 );
