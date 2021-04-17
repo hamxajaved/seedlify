@@ -10,9 +10,40 @@ function Create() {
     price: "",
     stock: "",
     avatar: "",
-    plant_id: "1",
-    category_id: "1",
+    plant_type_id: "",
+    plant_categories_id: "",
   });
+  const [categaries, setCategories] = React.useState([]);
+  const [types, setTypes] = React.useState([]);
+
+  React.useEffect(() => {
+    // fetching plantCtaegories form api
+    async function getcategaries() {
+      const response = await fetch("http://localhost:8000/api/categaries");
+      const body = await response.json();
+      console.log("response from api : ", body);
+      setCategories(
+        body.plantCategories.map(({ category, id }) => ({
+          label: category,
+          value: id,
+        }))
+      );
+    }
+    // fetching plant types from api
+    async function gettypes() {
+      const response = await fetch("http://localhost:8000/api/types");
+      const body = await response.json();
+      console.log("response from api : ", body);
+      setTypes(
+        body.plantTypes.map(({ type, id }) => ({
+          label: type,
+          value: id,
+        }))
+      );
+    }
+    getcategaries();
+    gettypes();
+  }, []);
 
   function handleChange(event) {
     const value = event.target.value;
@@ -20,8 +51,10 @@ function Create() {
       ...state,
       [event.target.name]: value,
     });
+    console.log("event.target.name : ", value);
   }
   const url = "http://localhost:8000/api/addPlant";
+
   const handleSubmit = (event) => {
     event.preventDefault();
     console.log("State : ", state);
@@ -123,22 +156,27 @@ function Create() {
                           <label className="font-weight-bolder">
                             Category*:
                           </label>
-                          <select name="category_id">
-                            <option disabled value="">
-                              Select Category
-                            </option>
-                            <option></option>
+                          <select
+                            name="plant_categories_id"
+                            onChange={handleChange}
+                          >
+                            {categaries.map((catgory) => (
+                              <option key={catgory.label} value={catgory.value}>
+                                {catgory.label}
+                              </option>
+                            ))}
                           </select>
                           <span className="invalid-feedback"></span>
                           <a>or Add a New Category</a>
                         </div>
                         <div className="col-lg-6">
                           <label className="font-weight-bolder">Type*:</label>
-                          <select name="type_id">
-                            <option disabled value="">
-                              Select Type
-                            </option>
-                            <option></option>
+                          <select name="plant_type_id" onChange={handleChange}>
+                            {types.map((type) => (
+                              <option key={type.label} value={type.value}>
+                                {type.label}
+                              </option>
+                            ))}
                           </select>
                           <span className="invalid-feedback"></span>
                           <a>or Add a New Type</a>

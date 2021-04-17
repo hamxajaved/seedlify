@@ -10,7 +10,7 @@ import Create from "./Product/Create";
 
 ReactDOM.render(
   <React.StrictMode>
-    <Create />
+    <App />
   </React.StrictMode>,
   document.getElementById("root")
 );
