@@ -27,7 +27,7 @@ function Navbar() {
               </a>
             </li>
             <li className="nav-item">
-              <Link to={"/create-product"} className="navbar-brand">
+              <Link to={"/product-listing"} className="navbar-brand">
                 Products
               </Link>
             </li>

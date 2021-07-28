@@ -1,0 +1,46 @@
+/* -----------Sngle Page Show product CSS ------------
+
+.single_product {
+  margin-top: 70px;
+}
+
+.col-md-7 h2 {
+  font-family: georgia;
+}
+
+.single_product .fa {
+  color: orange;
+}
+
+.single_product .price {
+  font-size: 26px;
+  font-weight: bold;
+  padding-top: 20px;
+}
+
+.single_product input {
+  border: 1px solid #ccc;
+  font-weight: bold;
+  height: 33px;
+  text-align: center;
+  width: 30px;
+}
+
+.single_product .btn-primary {
+  font-size: 15px;
+  margin-left: 20px;
+}
+
+/*-----------Product Description------------*/
+
+/* .product_description h6 {
+  margin-top: 50px;
+}
+
+.product_description p {
+  margin-top: 30px;
+}
+
+.product_description hr {
+  margin-bottom: 50px;
+} */

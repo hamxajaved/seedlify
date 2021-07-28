@@ -7,6 +7,7 @@ import Navbar from "./components/Navbar";
 import Create from "./Product/Create";
 
 import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { ProductsList } from "./Product/ProductsList";
 
 function App() {
   return (
@@ -24,9 +25,12 @@ function App() {
             path="/create-product"
             component={() => <Create></Create>}
           ></Route>
+          <Route
+            path="/product-listing"
+            component={() => <ProductsList></ProductsList>}
+          ></Route>
         </Switch>
       </div>
-      <Footer></Footer>
     </BrowserRouter>
   );
 }

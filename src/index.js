@@ -7,6 +7,10 @@ import "bootstrap/dist/css/bootstrap.css";
 import { Login } from "./Authentication_pages/Login";
 import Register from "./Authentication_pages/Register";
 import Create from "./Product/Create";
+import { Cart } from "./Cart/Cart";
+import { Show } from "./Product/Show";
+import { ProductsList } from "./Product/ProductsList";
+import { Nav } from "./components/Nav";
 
 ReactDOM.render(
   <React.StrictMode>

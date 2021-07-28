@@ -1,0 +1,95 @@
+/*---------view_by_category css-------------*/
+
+.category {
+  width: 100%;
+  padding-bottom: 30px;
+}
+
+.category img {
+  padding: 10px 0;
+  transition: 1s;
+  cursor: pointer;
+}
+
+.category img:hover {
+  transform: scale(1.1);
+}
+
+.title-box {
+  color: black;
+  font-family: georgia;
+  width: 100%;
+  padding: 4px 10px;
+  height: 40px;
+  margin-bottom: 20px;
+  display: flex;
+  margin-top: 30px;
+}
+
+.title-box h2 {
+  font-size: 24px;
+}
+
+.round img {
+  width: 100%;
+  padding-left: 10px;
+  border-radius: 50%;
+}
+
+.popular-top {
+  width: 100%;
+  padding-left: 30px;
+}
+
+.overlay-right {
+  display: block;
+  opacity: 0;
+  position: absolute;
+  top: 10%;
+  margin-left: 0;
+  width: 70px;
+}
+
+.overlay-right .fa {
+  cursor: pointer;
+  background-color: #fff;
+  color: #000;
+  height: 35px;
+  width: 35px;
+  font-size: 20px;
+  padding: 7px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.overlay-right .btn-secondary {
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.popular-top:hover .overlay-right {
+  opacity: 1;
+  margin-left: 5%;
+  transition: 0.5s;
+}
+
+/*------product-bottom css-----*/
+.popular-bottom {
+  padding-left: 30px;
+}
+
+.popular-bottom .fa {
+  color: orange;
+  font-size: 10px;
+}
+
+.popular-bottom h3 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.popular-bottom h5 {
+  font-size: 15px;
+  padding-bottom: 10px;
+}
